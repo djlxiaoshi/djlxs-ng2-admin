@@ -15,37 +15,29 @@ export class LeftBarComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'File',
+        label: '主页',
         icon: 'fa-file-o',
-        items: [
-          { label: 'New', icon: 'fa-plus'},
-          {label: 'Open'},
-          {label: 'Quit'}
-        ]
+        routerLink: 'home'
       },
       {
-        label: 'Edit',
+        label: 'Editor',
         icon: 'fa-edit',
-        items: [
-          {label: 'Undo', icon: 'fa-mail-forward'},
-          {label: 'Redo', icon: 'fa-mail-reply'}
-        ]
+        routerLink: 'editor'
       },
       {
-        label: 'Help',
+        label: 'E-Charts',
         icon: 'fa-question',
-        items: [
-          { label: 'Contents' },
-          { label: 'Search', icon: 'fa-search'}
-        ]
+        routerLink: 'charts'
       },
       {
-        label: 'Actions',
-        icon: 'fa-gear',
-        items: [
-          { label: 'Edit', icon: 'fa-refresh'},
-          { label: 'Other', icon: 'fa-phone'}
-        ]
+        label: 'Tables',
+        icon: 'fa-table',
+        routerLink: 'tables'
+      },
+      {
+        label: 'Maps',
+        icon: 'fa-map-marker',
+        routerLink: 'maps'
       }
     ];
   }
