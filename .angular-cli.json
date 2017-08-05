@@ -26,7 +26,9 @@
         "../node_modules/primeng/resources/themes/omega/theme.css",
         "styles.styl"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/ckeditor.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
