@@ -8,6 +8,8 @@ import { EditorComponent } from './editor/component/editor.component';
 import { ChartsComponent } from './charts/component/charts.component';
 import { TablesComponent } from './tables/tables.component';
 import { MapsComponent } from './maps/component/maps.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -15,7 +17,9 @@ export const routes: Routes = [
   {path: 'component', component: EditorComponent},
   {path: 'charts', component: ChartsComponent},
   {path: 'tables', component: TablesComponent},
-  {path: 'maps', component: MapsComponent}
+  {path: 'maps', component: MapsComponent},
+  {path: 'user/login', component: LoginComponent},
+  {path: 'user/register', component: RegisterComponent}
 ]
 
 export const routing = RouterModule.forRoot(routes, {useHash: true});

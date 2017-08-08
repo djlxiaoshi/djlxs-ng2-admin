@@ -24,6 +24,8 @@ import { TablesComponent } from './tables/tables.component';
 import { ChartsModule } from './charts/charts.module';
 import { EditorModule } from './editor/editor.module';
 import { MapsModule } from './maps/maps.module';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { MapsModule } from './maps/maps.module';
     TopHeaderComponent,
     HeaderLogoComponent,
     TablesComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

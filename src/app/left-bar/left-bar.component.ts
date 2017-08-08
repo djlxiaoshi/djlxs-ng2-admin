@@ -38,6 +38,14 @@ export class LeftBarComponent implements OnInit {
         label: 'Maps',
         icon: 'fa-map-marker',
         routerLink: 'maps'
+      },
+      {
+        label: 'User',
+        icon: 'fa-map-marker',
+        items: [
+          {label: 'Login', icon: 'fa-map-marker', routerLink: 'user/login'},
+          {label: 'Register', icon: 'fa-map-marker', routerLink: 'user/register'}
+        ]
       }
     ];
   }
