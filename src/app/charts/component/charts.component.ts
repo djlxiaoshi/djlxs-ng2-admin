@@ -4,8 +4,8 @@ import echarts from 'echarts'
 
 @Component({
   selector: 'app-charts',
-  templateUrl: './charts.component.html',
-  styleUrls: ['./charts.component.styl']
+  templateUrl: 'charts.component.html',
+  styleUrls: ['charts.component.styl']
 })
 export class ChartsComponent implements OnInit {
 

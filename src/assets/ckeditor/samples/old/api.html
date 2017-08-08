@@ -14,7 +14,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 // The instanceReady event is fired, when an instance of CKEditor has finished
 // its initialization.
 CKEDITOR.on( 'instanceReady', function( ev ) {
-	// Show the editor name and description in the browser status bar.
+	// Show the component name and description in the browser status bar.
 	document.getElementById( 'eMessage' ).innerHTML = 'Instance <code>' + ev.editor.name + '<\/code> loaded.';
 
 	// Show this sample buttons.
@@ -22,7 +22,7 @@ CKEDITOR.on( 'instanceReady', function( ev ) {
 });
 
 function InsertHTML() {
-	// Get the editor instance that we want to interact with.
+	// Get the component instance that we want to interact with.
 	var editor = CKEDITOR.instances.editor1;
 	var value = document.getElementById( 'htmlArea' ).value;
 
@@ -38,7 +38,7 @@ function InsertHTML() {
 }
 
 function InsertText() {
-	// Get the editor instance that we want to interact with.
+	// Get the component instance that we want to interact with.
 	var editor = CKEDITOR.instances.editor1;
 	var value = document.getElementById( 'txtArea' ).value;
 
@@ -54,26 +54,26 @@ function InsertText() {
 }
 
 function SetContents() {
-	// Get the editor instance that we want to interact with.
+	// Get the component instance that we want to interact with.
 	var editor = CKEDITOR.instances.editor1;
 	var value = document.getElementById( 'htmlArea' ).value;
 
-	// Set editor contents (replace current contents).
+	// Set component contents (replace current contents).
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-setData
 	editor.setData( value );
 }
 
 function GetContents() {
-	// Get the editor instance that you want to interact with.
+	// Get the component instance that you want to interact with.
 	var editor = CKEDITOR.instances.editor1;
 
-	// Get editor contents
+	// Get component contents
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-getData
 	alert( editor.getData() );
 }
 
 function ExecuteCommand( commandName ) {
-	// Get the editor instance that we want to interact with.
+	// Get the component instance that we want to interact with.
 	var editor = CKEDITOR.instances.editor1;
 
 	// Check the active editing mode.
@@ -88,18 +88,18 @@ function ExecuteCommand( commandName ) {
 }
 
 function CheckDirty() {
-	// Get the editor instance that we want to interact with.
+	// Get the component instance that we want to interact with.
 	var editor = CKEDITOR.instances.editor1;
-	// Checks whether the current editor contents present changes when compared
-	// to the contents loaded into the editor at startup
+	// Checks whether the current component contents present changes when compared
+	// to the contents loaded into the component at startup
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-checkDirty
 	alert( editor.checkDirty() );
 }
 
 function ResetDirty() {
-	// Get the editor instance that we want to interact with.
+	// Get the component instance that we want to interact with.
 	var editor = CKEDITOR.instances.editor1;
-	// Resets the "dirty state" of the editor (see CheckDirty())
+	// Resets the "dirty state" of the component (see CheckDirty())
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.editor-method-resetDirty
 	editor.resetDirty();
 	alert( 'The "IsDirty" status has been reset' );

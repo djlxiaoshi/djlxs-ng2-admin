@@ -22,7 +22,7 @@ export class LeftBarComponent implements OnInit {
       {
         label: 'Editor',
         icon: 'fa-edit',
-        routerLink: 'editor'
+        routerLink: 'component'
       },
       {
         label: 'E-Charts',

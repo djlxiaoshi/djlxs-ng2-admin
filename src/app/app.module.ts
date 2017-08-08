@@ -14,18 +14,16 @@ import {ButtonModule} from 'primeng/primeng';
 import {PanelMenuModule} from 'primeng/primeng';
 import {MenuModule} from 'primeng/primeng';
 
-import { CKEditorModule } from 'ng2-ckeditor';
-
-
-
 import { LeftBarComponent } from './left-bar/left-bar.component';
 import { HomeComponent } from './home/home.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { HeaderLogoComponent } from './header-logo/header-logo.component';
-import { EditorComponent } from './editor/editor.component';
-import { ChartsComponent } from './charts/charts.component';
 import { TablesComponent } from './tables/tables.component';
-import { MapsComponent } from './maps/maps.component';
+
+/**************custom module*****************/
+import { ChartsModule } from './charts/charts.module';
+import { EditorModule } from './editor/editor.module';
+import { MapsModule } from './maps/maps.module';
 
 @NgModule({
   declarations: [
@@ -34,10 +32,7 @@ import { MapsComponent } from './maps/maps.component';
     HomeComponent,
     TopHeaderComponent,
     HeaderLogoComponent,
-    EditorComponent,
-    ChartsComponent,
     TablesComponent,
-    MapsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +42,9 @@ import { MapsComponent } from './maps/maps.component';
     ButtonModule,
     PanelMenuModule,
     MenuModule,
-    CKEditorModule,
+    ChartsModule,
+    EditorModule,
+    MapsModule,
     routing
   ],
   providers: [],

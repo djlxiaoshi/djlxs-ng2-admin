@@ -17,7 +17,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 			if ( editor )
 				return;
 
-			// Create a new editor inside the <div id="editor">, setting its value to html
+			// Create a new component inside the <div id="component">, setting its value to html
 			var config = {};
 			editor = CKEDITOR.appendTo( 'editor', config, html );
 		}
@@ -26,12 +26,12 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 			if ( !editor )
 				return;
 
-			// Retrieve the editor contents. In an Ajax application, this data would be
+			// Retrieve the component contents. In an Ajax application, this data would be
 			// sent to the server or used in any other way.
 			document.getElementById( 'editorcontents' ).innerHTML = html = editor.getData();
 			document.getElementById( 'contents' ).style.display = '';
 
-			// Destroy the editor.
+			// Destroy the component.
 			editor.destroy();
 			editor = null;
 		}
@@ -60,14 +60,14 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 		<input onclick="createEditor();" type="button" value="Create Editor">
 		<input onclick="removeEditor();" type="button" value="Remove Editor">
 	</p>
-	<!-- This div will hold the editor. -->
+	<!-- This div will hold the component. -->
 	<div id="editor">
 	</div>
 	<div id="contents" style="display: none">
 		<p>
 			Edited Contents:
 		</p>
-		<!-- This div will be used to display the editor contents. -->
+		<!-- This div will be used to display the component contents. -->
 		<div id="editorcontents">
 		</div>
 	</div>

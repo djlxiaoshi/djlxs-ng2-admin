@@ -17,11 +17,11 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 		var editor;
 
 		function changeEnter() {
-			// If we already have an editor, let's destroy it first.
+			// If we already have an component, let's destroy it first.
 			if ( editor )
 				editor.destroy( true );
 
-			// Create the editor again, with the appropriate settings.
+			// Create the component again, with the appropriate settings.
 			editor = CKEDITOR.replace( 'editor1', {
 				extraPlugins: 'enterkey',
 				enterMode: Number( document.getElementById( 'xEnter' ).value ),

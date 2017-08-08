@@ -4,15 +4,15 @@
 import {Routes,RouterModule} from '@angular/router'
 
 import { HomeComponent } from './home/home.component';
-import { EditorComponent } from './editor/editor.component';
-import { ChartsComponent } from './charts/charts.component';
+import { EditorComponent } from './editor/component/editor.component';
+import { ChartsComponent } from './charts/component/charts.component';
 import { TablesComponent } from './tables/tables.component';
-import { MapsComponent } from './maps/maps.component';
+import { MapsComponent } from './maps/component/maps.component';
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'editor', component: EditorComponent},
+  {path: 'component', component: EditorComponent},
   {path: 'charts', component: ChartsComponent},
   {path: 'tables', component: TablesComponent},
   {path: 'maps', component: MapsComponent}

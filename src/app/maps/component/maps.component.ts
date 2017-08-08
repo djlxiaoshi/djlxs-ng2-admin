@@ -1,12 +1,11 @@
+/// <reference path="../../../../node_modules/@types/baidumap-web-sdk/index.d.ts" />
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http'
 
-declare var BMap;
-
 @Component({
   selector: 'app-maps',
-  templateUrl: './maps.component.html',
-  styleUrls: ['./maps.component.styl']
+  templateUrl: 'maps.component.html',
+  styleUrls: ['maps.component.styl']
 })
 export class MapsComponent implements OnInit {
 
