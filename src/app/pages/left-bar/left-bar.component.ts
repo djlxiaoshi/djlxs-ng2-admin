@@ -3,8 +3,8 @@ import {MenuItem} from 'primeng/primeng';
 
 @Component({
   selector: 'app-left-bar',
-  templateUrl: './left-bar.component.html',
-  styleUrls: ['./left-bar.component.styl']
+  templateUrl: 'left-bar.component.html',
+  styleUrls: ['left-bar.component.styl']
 })
 export class LeftBarComponent implements OnInit {
 
@@ -17,34 +17,34 @@ export class LeftBarComponent implements OnInit {
       {
         label: '主页',
         icon: 'fa-file-o',
-        routerLink: 'home'
+        routerLink: ['/home']
       },
       {
         label: 'Editor',
         icon: 'fa-edit',
-        routerLink: 'component'
+        routerLink: ['component']
       },
       {
         label: 'E-Charts',
         icon: 'fa-question',
-        routerLink: 'charts'
+        routerLink: ['charts']
       },
       {
         label: 'Tables',
         icon: 'fa-table',
-        routerLink: 'tables'
+        routerLink: ['tables']
       },
       {
         label: 'Maps',
         icon: 'fa-map-marker',
-        routerLink: 'maps'
+        routerLink: ['maps']
       },
       {
         label: 'User',
         icon: 'fa-map-marker',
         items: [
-          {label: 'Login', icon: 'fa-map-marker', routerLink: 'user/login'},
-          {label: 'Register', icon: 'fa-map-marker', routerLink: 'user/register'}
+          {label: 'Login', icon: 'fa-map-marker', routerLink: ['user/login']},
+          {label: 'Register', icon: 'fa-map-marker', routerLink: ['user/register']}
         ]
       }
     ];

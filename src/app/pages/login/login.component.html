@@ -1,5 +1,31 @@
 <ng-container>
   <div>
-
+    <p-dialog header="Title" [(visible)]="display" [width]="600" [draggable]="true" [modal]="true">
+      <p-header>
+        welcome to login
+      </p-header>
+      <div class="ui-dialog-content">
+        <div class="ui-inputgroup">
+          <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+          <input type="text" pInputText placeholder="Username" class="text-input">
+        </div>
+        <div class="ui-inputgroup">
+          <span class="ui-inputgroup-addon"><i class="fa fa-key"></i></span>
+          <input type="text" pInputText placeholder="Password" class="text-input">
+        </div>
+        <div class="login-wrap">
+          <button pButton type="button" label="Login" class="login-btn"></button>
+          <ul class="fast-login">
+            <li *ngFor="let item of fastLoginConfig" class="fast-item">
+              <img src="{{item.src}}" alt="{{item.title}}">
+            </li>
+          </ul>
+          <a href="#" class="forgot-password">Forgot Password</a>
+        </div>
+      </div>
+      <p-footer>
+        <a href="#" class="forgot-password">have no account,go to regist one</a>
+      </p-footer>
+    </p-dialog>
   </div>
 </ng-container>

@@ -3,7 +3,7 @@
  */
 import {Routes,RouterModule} from '@angular/router'
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { EditorComponent } from './editor/component/editor.component';
 import { ChartsComponent } from './charts/component/charts.component';
 import { TablesComponent } from './tables/tables.component';

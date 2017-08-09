@@ -1,15 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<ng-container>
+  <app-top-header></app-top-header>
+  <div class="p-wrap ui-g ui-fluid">
+    <div class="p_home_left_bar ui-lg-2 ui-md-2 ui-sm-12">
+      <app-left-bar></app-left-bar>
+    </div>
+    <div class="p-right-part ui-lg-10 ui-md-10 ui-sm-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</ng-container>
 
-<div class="p-wrap columns is-mobile">
-  <div class="p_home_left_bar column is-2">
-    <app-header-logo></app-header-logo>
-    <app-left-bar></app-left-bar>
-  </div>
-  <div class="p-right-part column is-10">
-    <app-top-header></app-top-header>
-    <router-outlet></router-outlet>
-  </div>
-</div>
 
 
 

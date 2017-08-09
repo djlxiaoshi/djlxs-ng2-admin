@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
+  items = [
+  {
+    label: '主页',
+    icon: 'fa-file-o',
+    routerLink: ['home']
+  },
+  {
+    label: 'Editor',
+    icon: 'fa-edit',
+    routerLink: 'component'
+  }]
   constructor() { }
 
   ngOnInit() {
