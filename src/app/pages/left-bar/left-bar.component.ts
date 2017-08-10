@@ -40,6 +40,11 @@ export class LeftBarComponent implements OnInit {
         routerLink: ['maps']
       },
       {
+        label: 'Forms',
+        icon: 'fa-check-square-o',
+        routerLink: ['forms']
+      },
+      {
         label: 'User',
         icon: 'fa-map-marker',
         items: [

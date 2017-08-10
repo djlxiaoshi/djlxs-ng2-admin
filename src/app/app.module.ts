@@ -14,6 +14,7 @@ import {PanelMenuModule} from 'primeng/primeng';
 import {MenuModule} from 'primeng/primeng';
 import {ButtonModule} from 'primeng/primeng';
 import {InputTextModule} from 'primeng/primeng';
+import {DropdownModule} from 'primeng/primeng';
 
 import { LeftBarComponent } from './pages/left-bar/left-bar.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,7 +25,8 @@ import { TablesComponent } from './tables/tables.component';
 import { ChartsModule } from './charts/charts.module';
 import { EditorModule } from './editor/editor.module';
 import { MapsModule } from './maps/maps.module';
-import {UserModule} from './pages/user.module'
+import {UserModule} from './pages/user.module';
+import { FormElementsModule } from './forms/form-elements.module'
 
 
 @NgModule({
@@ -43,11 +45,13 @@ import {UserModule} from './pages/user.module'
     MenuModule,
     ButtonModule,
     InputTextModule,
+    DropdownModule,
     BrowserAnimationsModule,
     ChartsModule,
     EditorModule,
     MapsModule,
     UserModule,
+    FormElementsModule,
     routing
   ],
   providers: [],
