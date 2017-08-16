@@ -5,7 +5,7 @@ import {SelectItem} from 'primeng/primeng';
 @Component({
   selector: 'app-forms',
   templateUrl: 'forms.component.html',
-  styleUrls: ['forms.component.styl']
+  styleUrls: ['forms.component.scss']
 })
 export class FormsComponent implements OnInit {
 

@@ -21,10 +21,10 @@
       "styles": [
         "../node_modules/normalize.css/normalize.css",
         "../node_modules/bulma/css/bulma.css",
-        "../node_modules/primeng/resources/themes/pepper-grinder/theme.css",
+        "theme/pepper-grinder/theme.scss",
         "../node_modules/primeng/resources/primeng.min.css",
         "../node_modules/font-awesome/css/font-awesome.min.css",
-        "styles.styl"
+        "styles.scss"
       ],
       "scripts": [
         "assets/ckeditor.js"
@@ -58,7 +58,8 @@
     }
   },
   "defaults": {
-    "styleExt": "styl",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }

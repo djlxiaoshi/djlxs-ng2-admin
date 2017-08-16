@@ -1,0 +1,32 @@
+@import "../../../common/scss/global.scss";
+$searchHeight: 30px;
+.p-top-header{
+  width: 100%;
+  height: $top-header-height;
+  background: $top-header-background-color;
+  .right-bar{
+    justify-content: space-between;
+    .left-collapse-search{
+      .collapse-icon-wrap{
+        margin-right: 30px;
+        a{
+          line-height: 30px;
+          font-size: 20px;
+        }
+      }
+      .search-box-wrap{
+        width: 200px;
+        margin-bottom: 0;
+        .control{
+          input{
+            height: $searchHeight;
+            border-radius: 30px;
+          }
+          .icon{
+            height: $searchHeight;
+          }
+        }
+      }
+    }
+  }
+}

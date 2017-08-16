@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.styl']
+  styleUrls: ['login.component.scss']
 })
 export class LoginComponent implements OnInit {
   display:boolean = true;

@@ -1,0 +1,14 @@
+@import '../common/scss/global.scss';
+.p-wrap{
+  .p_home_left_bar {
+    padding: 0;
+    background: $left-bar-background;
+  }
+
+  .p-right-part{
+    box-sizing: border-box;
+    border: 2px solid lightblue;
+  }
+}
+
+

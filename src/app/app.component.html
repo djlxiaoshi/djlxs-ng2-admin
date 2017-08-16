@@ -1,13 +1,13 @@
 <ng-container>
-  <app-top-header></app-top-header>
-  <div class="p-wrap ui-g ui-fluid">
-    <div class="p_home_left_bar ui-lg-2 ui-md-2 ui-sm-12">
-      <app-left-bar></app-left-bar>
+    <app-top-header></app-top-header>
+    <div class="p-wrap ui-g ui-fluid ui-sm-12">
+      <div class="p_home_left_bar ui-lg-2 ui-md-2 ui-sm-0">
+        <app-left-bar></app-left-bar>
+      </div>
+      <div class="p-right-part ui-lg-10 ui-md-10 ui-sm-12">
+        <router-outlet></router-outlet>
+      </div>
     </div>
-    <div class="p-right-part ui-lg-10 ui-md-10 ui-sm-12">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
 </ng-container>
 
 

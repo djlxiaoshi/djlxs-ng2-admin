@@ -5,7 +5,7 @@ import {Http} from '@angular/http'
 @Component({
   selector: 'app-maps',
   templateUrl: 'maps.component.html',
-  styleUrls: ['maps.component.styl']
+  styleUrls: ['maps.component.scss']
 })
 export class MapsComponent implements OnInit {
 

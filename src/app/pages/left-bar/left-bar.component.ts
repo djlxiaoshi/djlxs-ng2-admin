@@ -4,7 +4,7 @@ import {MenuItem} from 'primeng/primeng';
 @Component({
   selector: 'app-left-bar',
   templateUrl: 'left-bar.component.html',
-  styleUrls: ['left-bar.component.styl']
+  styleUrls: ['left-bar.component.scss']
 })
 export class LeftBarComponent implements OnInit {
 
