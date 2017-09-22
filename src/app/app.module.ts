@@ -28,7 +28,7 @@ import { EditorModule } from './editor/editor.module';
 import { MapsModule } from './maps/maps.module';
 import {UserModule} from './pages/user.module';
 import { FormElementsModule } from './forms/form-elements.module';
-import { BlogComponent } from './blog/blog.component'
+import {BlogModule} from './blog/blog.module'
 
 
 @NgModule({
@@ -37,8 +37,7 @@ import { BlogComponent } from './blog/blog.component'
     LeftBarComponent,
     HomeComponent,
     TopHeaderComponent,
-    TablesComponent,
-    BlogComponent
+    TablesComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +54,7 @@ import { BlogComponent } from './blog/blog.component'
     MapsModule,
     UserModule,
     FormElementsModule,
+    BlogModule,
     routing
   ],
   providers: [],

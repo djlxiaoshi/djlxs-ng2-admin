@@ -4,29 +4,13 @@ $searchHeight: 30px;
   width: 100%;
   height: $top-header-height;
   background: $top-header-background-color;
+  .left-logo{
+    background-color: #E5E5E5;
+  }
   .right-bar{
     justify-content: space-between;
-    .left-collapse-search{
-      .collapse-icon-wrap{
-        margin-right: 30px;
-        a{
-          line-height: 30px;
-          font-size: 20px;
-        }
-      }
-      .search-box-wrap{
-        width: 200px;
-        margin-bottom: 0;
-        .control{
-          input{
-            height: $searchHeight;
-            border-radius: 30px;
-          }
-          .icon{
-            height: $searchHeight;
-          }
-        }
-      }
+    .search-input-wrap{
+      width: 200px;
     }
   }
 }

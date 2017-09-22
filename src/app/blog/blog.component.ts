@@ -1,3 +1,5 @@
+import {Map} from 'immutable'
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
+   obj
 
   constructor() { }
-
   ngOnInit() {
+    this.obj = Map({name: 'djlxs', habits: {item: '羽毛球'}})
   }
 
+  changeObj() {
+    this.obj = this.obj.set('name', 'djl');
+  };
 }

@@ -1,28 +1,25 @@
 <ng-container>
   <div class="p-top-header ui-g ui-fluid">
-    <div class="left-logo ui-lg-2 ui-md-3 ui-sm-12" >
+    <div class="left-logo ui-lg-2 ui-md-3 ui-sm-10" >
       <h1>djlxs-ng2-admin</h1>
     </div>
-    <div class="right-bar  ui-lg-10 ui-md-9 ui-sm-12 ui-g ui-fluid">
-      <div class="left-collapse-search ui-g ui-fluid ui-sm-12" >
-        <div class="collapse-icon-wrap ui-sm-12">
-          <a class="fa fa-list"></a>
-        </div>
-        <div class="field search-box-wrap">
-          <div class="control  has-icons-right">
-            <input class="input is-success" type="text" placeholder="Search input">
-            <span class="icon is-small is-right">
-          <i class="fa fa-search"></i>
+    <div class="right-bar ui-lg-10 ui-md-9 ui-sm-2 ui-g ui-fluid">
+      <div class="">
+        <i class="fa fa-list"></i>
+        <div class="input-group search-input-wrap">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go!</button>
         </span>
-          </div>
-        </div>
+        </div><!-- /input-group -->
       </div>
-      <div class="profile-message-wrap ui-sm-12">
-        <div class="personal-profile"></div>
-        <div class="message-wrap">
-          <i class="fa fa-envelope"></i>
-        </div>
+      <div class="">
+        <div class="avatar"></div>
+        <i class=" fa fa-envelope-o"></i>
+        <i class="fa fa-bell"></i>
+        <i class="fa fa-comments"></i>
       </div>
+
     </div>
   </div>
 </ng-container>

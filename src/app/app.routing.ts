@@ -11,6 +11,9 @@ import { MapsComponent } from './maps/component/maps.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { FormsComponent } from './forms/component/forms.component';
+import {BlogComponent} from './blog/blog.component';
+import {ServiceComponent} from './blog/service/service.component'
+import {RouterComponent} from './blog/router/router.component'
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -21,7 +24,10 @@ export const routes: Routes = [
   {path: 'maps', component: MapsComponent},
   {path: 'forms', component: FormsComponent},
   {path: 'user/login', component: LoginComponent},
-  {path: 'user/register', component: RegisterComponent}
+  {path: 'user/register', component: RegisterComponent},
+  {path: 'blog/lifecircle', component: BlogComponent},
+  {path: 'blog/service', component: ServiceComponent},
+  {path: 'blog/router', component: RouterComponent}
 ]
 
 export const routing = RouterModule.forRoot(routes, {useHash: true});

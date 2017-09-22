@@ -51,6 +51,15 @@ export class LeftBarComponent implements OnInit {
           {label: 'Login', icon: 'fa-map-marker', routerLink: ['user/login']},
           {label: 'Register', icon: 'fa-map-marker', routerLink: ['user/register']}
         ]
+      },
+      {
+        label: 'Blog',
+        icon: 'fa-map-marker',
+        items: [
+          {label: 'LifeCircle', icon: '', routerLink: ['blog/lifecircle']},
+          {label: '依赖注入', icon: '', routerLink: ['blog/service']},
+          {label: '路由', icon: '', routerLink: ['blog/router']}
+        ]
       }
     ];
   }

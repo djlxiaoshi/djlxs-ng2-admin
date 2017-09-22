@@ -1,3 +1,8 @@
-<p>
-  blog works!
-</p>
+<ng-container>
+  <h1>生命周期示例</h1>
+  <app-lifecircle [obj]="obj">
+    <h4>这是插入的内容</h4>
+  </app-lifecircle>
+
+  <button pButton type="button" (click)="changeObj()" label="ngAfterViewChecked"></button>
+</ng-container>
