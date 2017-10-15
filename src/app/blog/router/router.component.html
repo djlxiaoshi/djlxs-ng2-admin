@@ -1,6 +1,14 @@
 <ng-container>
+  <a [routerLink]="['child1']" [queryParams]="{name: 'DJL箫氏', flag: flag}">Child01</a>
+  <a [routerLink]="['child1']" [queryParams]="{name: 'DJL箫氏', flag: flag}">Child02</a>
+  <a [routerLink]="['child2']">Child03</a>
 
-  <a [routerLink]="['/router/child1']">child1</a>
-  <br>
-  <router-outlet></router-outlet>
+  <button (click)="test()">手动路由跳转</button>
+
+
+  <button (click)="changeFlag()">改变flag</button>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </ng-container>

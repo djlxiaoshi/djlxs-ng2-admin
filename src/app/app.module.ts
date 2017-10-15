@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {routing} from './app.routing'
-
 /************ primeNG**************/
 import {PanelMenuModule} from 'primeng/primeng';
 import {MenuModule} from 'primeng/primeng';
@@ -17,18 +15,21 @@ import {InputTextModule} from 'primeng/primeng';
 import {DropdownModule} from 'primeng/primeng';
 
 /*******************user component************************/
-import { LeftBarComponent } from './pages/left-bar/left-bar.component';
-import { HomeComponent } from './pages/home/home.component';
-import { TopHeaderComponent } from './pages/top-header/top-header.component';
+import { LeftBarComponent } from './ui/left-bar/left-bar.component';
+import { HomeComponent } from './ui/home/home.component';
+import { TopHeaderComponent } from './ui/top-header/top-header.component';
 import { TablesComponent } from './tables/tables.component';
 
 /**************custom module*****************/
 import { ChartsModule } from './charts/charts.module';
 import { EditorModule } from './editor/editor.module';
 import { MapsModule } from './maps/maps.module';
-import {UserModule} from './pages/user.module';
+import {UserModule} from './ui/user.module';
 import { FormElementsModule } from './forms/form-elements.module';
 import {BlogModule} from './blog/blog.module'
+
+
+import {routing} from './app.routing';
 
 
 @NgModule({

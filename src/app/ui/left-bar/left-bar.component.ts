@@ -22,7 +22,7 @@ export class LeftBarComponent implements OnInit {
       {
         label: 'Editor',
         icon: 'fa-edit',
-        routerLink: ['component']
+        routerLink: ['/editor']
       },
       {
         label: 'E-Charts',
@@ -56,8 +56,6 @@ export class LeftBarComponent implements OnInit {
         label: 'Blog',
         icon: 'fa-map-marker',
         items: [
-          {label: 'LifeCircle', icon: '', routerLink: ['blog/lifecircle']},
-          {label: '依赖注入', icon: '', routerLink: ['blog/service']},
           {label: '路由', icon: '', routerLink: ['blog/router']}
         ]
       }

@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or http://ckeditor.com/license
  */
 
-// Tool scripts for the sample pages.
+// Tool scripts for the sample ui.
 // This file can be ignored and is not required to make use of CKEditor.
 
 ( function() {
