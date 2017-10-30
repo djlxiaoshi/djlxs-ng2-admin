@@ -8,9 +8,22 @@ var img_w = 77;
 var img_h = 80;
 var radius = 30;	//圆形半径
 
-var svg = d3.select('body').append('svg')
-  .attr('width',width)
-  .attr('height',height);
+
+
+@Component({
+  selector: 'app-d3',
+  templateUrl: './d3.component.html',
+  styleUrls: ['./d3.component.scss']
+})
+export class D3Component implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(
+  ) {
+    var svg = d3.select('#d3-container').append('svg')
+      .attr('width',width)
+      .attr('height',height);
 
 
 d3.json('assets/json/data.json',function(error,root){
@@ -132,17 +145,6 @@ d3.json('assets/json/data.json',function(error,root){
     nodes_text.attr('y',function(d){ return d.y + img_w/2; });
   });
 });
-
-@Component({
-  selector: 'app-d3',
-  templateUrl: './d3.component.html',
-  styleUrls: ['./d3.component.scss']
-})
-export class D3Component implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
   }
 
 }

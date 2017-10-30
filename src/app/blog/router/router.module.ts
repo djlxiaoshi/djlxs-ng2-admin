@@ -1,18 +1,25 @@
-/**
- * Created by JohnLi on 2017/9/21.
- */
-import {NgModule} from '@angular/core';
-import {RouterModule} from '@angular/router'
-import {RouterComponent} from './router.component'
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {RouterModule} from '@angular/router';
 
-import {RouterConfig} from './router'
+import {ButtonModule} from 'primeng/primeng';
+import { RouterComponent } from './router.component';
+import { Child1RouterComponent } from './child1-router/child1-router.component';
 
-import { Child1Component } from './child1/child1.component';
+import {RouterConfig} from './router.router';
+
+import {CanActiveService} from './can-active.service';
+import {ResolveGuard} from './resolve.service';
+
 
 @NgModule({
-  imports: [RouterModule.forChild(RouterConfig)],
-  declarations: [RouterComponent, Child1Component],
+  imports: [
+    CommonModule,
+    ButtonModule,
+    RouterModule.forChild(RouterConfig)
+  ],
   exports: [],
+  providers: [ResolveGuard],
+  declarations: [RouterComponent, Child1RouterComponent]
 })
-
-export class MyRouterModule {}
+export class MyRouterModule { }

@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import {BlogComponent} from './blog.component'
-import {LifecircleComponent} from './lifecircle/lifecircle.component'
+import {RouterModule} from '@angular/router';
 
 import {ButtonModule} from 'primeng/primeng';
-import { ServiceComponent } from './service/service.component';
 
 import {MyRouterModule} from './router/router.module';
 import { DirectiveDirective } from './directive/directive.directive'
@@ -18,9 +15,6 @@ import { DirectiveDirective } from './directive/directive.directive'
   ],
   exports: [],
   declarations: [
-    LifecircleComponent,
-    BlogComponent,
-    ServiceComponent,
     DirectiveDirective
   ]
 })
