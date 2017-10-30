@@ -7,7 +7,8 @@ import {LifecircleComponent} from './lifecircle/lifecircle.component'
 import {ButtonModule} from 'primeng/primeng';
 import { ServiceComponent } from './service/service.component';
 
-import {MyRouterModule} from './router/router.module'
+import {MyRouterModule} from './router/router.module';
+import { DirectiveDirective } from './directive/directive.directive'
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import {MyRouterModule} from './router/router.module'
   declarations: [
     LifecircleComponent,
     BlogComponent,
-    ServiceComponent
+    ServiceComponent,
+    DirectiveDirective
   ]
 })
 export class BlogModule { }

@@ -1,5 +1,12 @@
 <ng-container>
   <h1>生命周期示例</h1>
+
+  <!--<p *unless="false">结构指令值为false生效</p>-->
+
+  <template [unless]="false" #tmpl>
+    <p >结构指令值为false生效了</p>
+  </template>
+
   <app-lifecircle [obj]="obj">
     <h4>这是插入的内容</h4>
   </app-lifecircle>

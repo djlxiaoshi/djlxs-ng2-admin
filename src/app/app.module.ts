@@ -28,7 +28,8 @@ import { EditorModule } from './editor/editor.module';
 import { MapsModule } from './maps/maps.module';
 import {UserModule} from './pages/user.module';
 import { FormElementsModule } from './forms/form-elements.module';
-import {BlogModule} from './blog/blog.module'
+import {BlogModule} from './blog/blog.module';
+import { D3Component } from './d3/d3.component'
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import {BlogModule} from './blog/blog.module'
     LeftBarComponent,
     HomeComponent,
     TopHeaderComponent,
-    TablesComponent
+    TablesComponent,
+    D3Component
   ],
   imports: [
     BrowserModule,
